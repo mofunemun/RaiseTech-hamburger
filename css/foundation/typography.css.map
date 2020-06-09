@@ -2,7 +2,7 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "typography.sass"
+        "typography.scss"
     ],
     "names": [],
     "file": "typography.css"
