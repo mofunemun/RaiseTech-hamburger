@@ -347,4 +347,30 @@ header {
   text-align: right;
   padding: 5px;
 }
+
+.header__search__searchbox {
+  width: 65%;
+  height: 1.5rem;
+  border: solid 2px black;
+  border-radius: 5px;
+}
+
+.header__search__searchbtn {
+  width: 30%;
+  height: 1.5em;
+  border: solid 2px black;
+  border-radius: 5px;
+}
+
+.header__search > div {
+  width: 80%;
+  margin: 0 auto;
+  padding: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 /*# sourceMappingURL=import.css.map */
