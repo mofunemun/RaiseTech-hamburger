@@ -1,4 +1,8 @@
+@import "../utility/clearfix";
+
 .header__menu{
     float: right;
-    @include clearfix;
+    width: 100%;
+    text-align: right;
+    padding: 5px;
 }
