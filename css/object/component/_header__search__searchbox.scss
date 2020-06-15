@@ -1,6 +1,9 @@
+@import "../utility/variables";
+
 .header__search__searchbox{
-    width: 65%;
-    height: 1.5rem;
-    border: solid 1px #707070;
-    border-radius: 5px;
+    width: 80%;
+    height: 3rem;
+    // border: solid 1px $gray;
+    // border-radius: 5px;
+    background-color: white;
 }

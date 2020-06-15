@@ -333,6 +333,8 @@ header {
 
 .header__logo {
   text-align: center;
+  font-size: 40px;
+  color: #707070;
 }
 
 .clearfix::after {
@@ -348,29 +350,51 @@ header {
   padding: 5px;
 }
 
+.header__menu > a {
+  text-decoration: none;
+  color: #707070;
+}
+
 .header__search__searchbox {
-  width: 65%;
-  height: 1.5rem;
-  border: solid 2px black;
-  border-radius: 5px;
+  width: 80%;
+  height: 3rem;
+  background-color: white;
 }
 
 .header__search__searchbtn {
-  width: 30%;
-  height: 1.5em;
-  border: solid 2px black;
+  width: 20%;
+  height: 3rem;
+  border: solid 1px #707070;
   border-radius: 5px;
+  background-color: #f2ede9;
+  color: #707070;
+}
+
+.header__search__searchicon {
+  height: 3rem;
+  width: 20%;
+  display: inline-block;
+  text-align: center;
 }
 
 .header__search > div {
   width: 80%;
-  margin: 0 auto;
+  margin: 1.5rem auto;
   padding: 3px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.header__search > div > div {
+  width: 65%;
+  border: 1px solid #707070;
+  border-radius: 5px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=import.css.map */
