@@ -1,9 +1,14 @@
+// ↓foundation↓
 @import "foundation/reset";
 
 @import "foundation/typography";
 
+// ↓layout↓
 @import "layout/header";
 
+@import "layout/main";
+
+// ↓object/compo/header↓
 @import "object/component/header__logo";
 
 @import "object/component/header__menu";
@@ -14,4 +19,26 @@
 
 @import "object/component/header__search__searchicon";
 
+// ↓object/compo/main↓
+@import "object/component/main__title__logo";
+
+@import "object/component/main__eatstyle__discription";
+
+@import "object/component/main__access__headline";
+
+@import "object/component/main__access__paragraph";
+
+// ↓object/proj/header↓
 @import "object/project/header__search";
+
+// ↓object/proj/main↓
+@import "object/project/main__title";
+
+@import "object/project/main__eatstyle";
+
+@import "object/project/main__eatstyle__eatin";
+
+@import "object/project/main__eatstyle__takeout";
+
+@import "object/project/main__access";
+

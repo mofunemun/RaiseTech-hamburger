@@ -337,17 +337,17 @@ header {
   color: #707070;
 }
 
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 .header__menu {
   float: right;
   width: 100%;
   text-align: right;
   padding: 5px;
+}
+
+.header__menu .clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .header__menu > a {
