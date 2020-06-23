@@ -22,11 +22,19 @@
 // ↓object/compo/main↓
 @import "object/component/main__title__logo";
 
+@import "object/component/main__eatstyle__headline";
+
 @import "object/component/main__eatstyle__discription";
 
 @import "object/component/main__access__headline";
 
 @import "object/component/main__access__paragraph";
+
+@import "object/component/main__access__map";
+
+@import "object/component/main__access__dark";
+
+@import "object/component/main__access__bright";
 
 // ↓object/proj/header↓
 @import "object/project/header__search";
