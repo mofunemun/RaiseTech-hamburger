@@ -1,0 +1,12 @@
+.main__access__headline{
+    font-family: $font-m;
+    font-size: 30px;
+    font-weight: 400;
+    // color: white;
+    padding: 2vh 0;
+    // width: 70%;
+    +div{
+        width: 8vh;
+        border-top: black solid 3px;
+    }
+}
