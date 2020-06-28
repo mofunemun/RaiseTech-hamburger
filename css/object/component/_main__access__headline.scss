@@ -4,9 +4,15 @@
     font-weight: 400;
     // color: white;
     padding: 2vh 0;
-    // width: 70%;
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
     +div{
         width: 8vh;
         border-top: black solid 3px;
+        position: absolute;
+        left:15%;
+        // height: 5vh;
+        margin-bottom: 5vh;
     }
 }
