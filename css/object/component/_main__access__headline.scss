@@ -2,17 +2,20 @@
     font-family: $font-m;
     font-size: 30px;
     font-weight: 400;
-    // color: white;
+    color: white;
     padding: 2vh 0;
     width: 70%;
     margin: 0 auto;
     position: relative;
+    z-index: 2;
     +div{
         width: 8vh;
-        border-top: black solid 3px;
+        border-top: white solid 3px;
         position: absolute;
         left:15%;
         // height: 5vh;
         margin-bottom: 5vh;
+        z-index: 2;
+        color: white;
     }
 }

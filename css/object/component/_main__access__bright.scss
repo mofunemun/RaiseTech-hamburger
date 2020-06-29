@@ -1,6 +1,10 @@
 .main__access__bright{
-    width: auto;
-    // height: calc(高さ * 0.4);
+    width: 100%;
+    height: 40%;
     background-color: rgba($color: #000000, $alpha: 0.3);
     float: left;
+    position: absolute;
+    top:60%;
+    left: 0;
+    z-index: 1;
 }
