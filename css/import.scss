@@ -6,6 +6,8 @@
 // ↓layout↓
 @import "layout/header";
 
+@import "layout/aside";
+
 @import "layout/main";
 
 @import "layout/footer";
@@ -20,6 +22,11 @@
 @import "object/component/header__search__searchbtn";
 
 @import "object/component/header__search__searchicon";
+
+// ↓object/compo/aside↓
+@import "object/component/aside__nav__list__headline";
+
+@import "object/component/aside__nav__list__sublist__items";
 
 // ↓object/compo/main↓
 @import "object/component/main__title__logo";
@@ -45,6 +52,11 @@
 
 // ↓object/proj/header↓
 @import "object/project/header__search";
+
+// ↓object/proj/aside↓
+@import "object/project/aside__nav__list";
+
+@import "object/project/aside__nav__list__sublist";
 
 // ↓object/proj/main↓
 @import "object/project/main__title";
