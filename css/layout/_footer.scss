@@ -1,0 +1,13 @@
+footer{
+    background-color: #9D8670;
+    height: 20vh;
+    width: 100%;
+    position: relative;
+    >div{
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: 0 auto;
+    }
+}

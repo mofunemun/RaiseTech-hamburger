@@ -8,6 +8,8 @@
 
 @import "layout/main";
 
+@import "layout/footer";
+
 // ↓object/compo/header↓
 @import "object/component/header__logo";
 
@@ -36,6 +38,11 @@
 
 @import "object/component/main__access__bright";
 
+// ↓object/compo/footer↓
+@import "object/component/footer__copyrights";
+
+@import "object/component/footer__menu";
+
 // ↓object/proj/header↓
 @import "object/project/header__search";
 
@@ -49,4 +56,6 @@
 @import "object/project/main__eatstyle__takeout";
 
 @import "object/project/main__access";
+
+
 

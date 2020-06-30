@@ -333,6 +333,22 @@ header {
   position: relative;
 }
 
+footer {
+  background-color: #9D8670;
+  height: 20vh;
+  width: 100%;
+  position: relative;
+}
+
+footer > div {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin: 0 auto;
+}
+
 .header__logo {
   text-align: center;
   font-size: 40px;
@@ -511,6 +527,24 @@ header {
   top: 60%;
   left: 0;
   z-index: 1;
+}
+
+.footer__copyrights {
+  color: white;
+  text-align: center;
+}
+
+.footer__menu {
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.footer__menu > a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
 }
 
 .header__search > div {
