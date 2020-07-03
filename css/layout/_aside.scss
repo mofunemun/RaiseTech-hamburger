@@ -1,0 +1,14 @@
+aside{
+    width: 90%;
+    background-color: #F2EDE9;
+    position: absolute;
+    top: 0;
+    right: 0;
+    visibility: hidden;
+    >nav{
+        width: 70%;
+        padding-top: 20vh;
+        margin: 0 auto;
+        height: 200vh;
+    }
+}

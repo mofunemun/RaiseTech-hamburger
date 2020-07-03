@@ -333,6 +333,22 @@ header {
   position: relative;
 }
 
+aside {
+  width: 90%;
+  background-color: #F2EDE9;
+  position: absolute;
+  top: 0;
+  right: 0;
+  visibility: hidden;
+}
+
+aside > nav {
+  width: 70%;
+  padding-top: 20vh;
+  margin: 0 auto;
+  height: 200vh;
+}
+
 footer {
   background-color: #9D8670;
   height: 20vh;
@@ -393,6 +409,40 @@ footer > div {
   width: 20%;
   display: inline-block;
   text-align: center;
+}
+
+.aside__nav__list__headline {
+  font-size: 24px;
+  font-family: "'M PLUS 1p', sans-serif";
+  color: #707070;
+  margin: 25px 25px 25px 0;
+}
+
+.aside__nav__list > ul {
+  list-style: none;
+}
+
+.aside__nav__list > ul > li {
+  font-family: "'M PLUS 1p', sans-serif";
+  font-size: 20px;
+  color: #707070;
+  margin: 20px;
+}
+
+.aside__nav__list > ul > li > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+aside > button {
+  font-size: 60px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 5px 30px;
+  font-weight: 400;
+  font-family: "'M PLUS 1p', sans-serif";
+  color: #707070;
 }
 
 .main__title__logo {
@@ -566,6 +616,16 @@ footer > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.aside__nav__list {
+  list-style: none;
+  margin-bottom: 10vh;
+}
+
+.aside__nav__list > ul {
+  margin-left: 30px;
+  list-style: none;
 }
 
 .main__title {

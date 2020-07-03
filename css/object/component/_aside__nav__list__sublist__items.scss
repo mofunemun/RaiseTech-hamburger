@@ -1,0 +1,14 @@
+.aside__nav__list>ul{
+    list-style: none;
+    >li{
+        font-family: $font_m;
+        font-size: 20px;
+        color: #707070;
+        margin: 20px;
+        >a{
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+}
+    
