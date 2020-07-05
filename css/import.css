@@ -334,8 +334,8 @@ header {
 }
 
 aside {
-  width: 90%;
-  background-color: #F2EDE9;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
   top: 0;
   right: 0;
@@ -343,9 +343,12 @@ aside {
 }
 
 aside > nav {
-  width: 70%;
+  width: 90%;
   padding-top: 20vh;
-  margin: 0 auto;
+  background-color: #F2EDE9;
+  position: absolute;
+  top: 0;
+  right: 0;
   height: 200vh;
 }
 
@@ -373,9 +376,11 @@ footer > div {
 
 .header__menu {
   float: right;
-  width: 100%;
   text-align: right;
-  padding: 5px;
+  width: 60px;
+  height: 60px;
+  background-color: #F2EDE9;
+  position: relative;
 }
 
 .header__menu .clearfix::after {
@@ -384,9 +389,56 @@ footer > div {
   clear: both;
 }
 
-.header__menu > a {
-  text-decoration: none;
-  color: #707070;
+.header__menu::before, .header__menu::after {
+  content: '';
+  width: 20px;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  left: calc(50% - 20px / 2);
+  display: block;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+.header__menu::before {
+  top: 22px;
+}
+
+.header__menu::after {
+  top: 38px;
+}
+
+.header__menu > span {
+  width: 20px;
+  height: 1px;
+  font-size: 0;
+  background: #fff;
+  position: absolute;
+  left: calc(50% - 20px / 2);
+  display: block;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+.header__menu .is-open::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 28px;
+}
+
+.header__menu .is-open::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 28px;
+}
+
+.header__menu .is-open > span {
+  display: none;
 }
 
 .header__search__searchbox {
@@ -434,12 +486,12 @@ footer > div {
   color: inherit;
 }
 
-aside > button {
-  font-size: 60px;
+nav > button > span {
+  font-size: 0;
   position: absolute;
   top: 0;
   right: 0;
-  margin: 5px 30px;
+  margin: 6px;
   font-weight: 400;
   font-family: "'M PLUS 1p', sans-serif";
   color: #707070;

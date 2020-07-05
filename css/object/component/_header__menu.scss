@@ -1,14 +1,49 @@
 .header__menu{
     float: right;
-    width: 100%;
     text-align: right;
-    padding: 5px;
-    & {
-        @import "../utility/clearfix";
-}
-}
-
-.header__menu > a{
-    text-decoration: none;
-    color: $gray;
+    @import "../utility/clearfix";
+    width: 60px;
+    height: 60px;
+    background-color: #F2EDE9;
+    position: relative;
+    &::before,
+    &::after{
+        content: '';
+        width: $btnWidth;
+        height: $btnHeight;
+        background: #fff;
+        position: absolute;
+        left:calc(50% - #{$btnWidth} / 2);
+        display: block;
+        transition: transform 0.2s;
+    }
+    &::before{
+        top:22px;
+    }
+    &::after{
+        top:38px;
+    }
+    >span{
+        width: $btnWidth;
+        height: $btnHeight;
+        font-size: 0;
+        background: #fff;
+        position: absolute;
+        left: calc(50% - #{$btnWidth} / 2);
+        display: block;
+        transition: transform 0.2s;
+    }
+    & .is-open{
+        &::before{
+            transform: rotate(45deg);
+            top:28px;
+        }
+        &::after{
+            transform: rotate(-45deg);
+            top:28px;
+        }
+        >span{
+            display: none;
+        }
+    }
 }

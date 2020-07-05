@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="css/import.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <h2 class="header__menu clearfix"><a href="#">Menu</a></h2>
+        <button class="header__menu clearfix">
+            <span>これはボタンです</span>
+        </button>
         <h1 class="header__logo">Hamburger</h1>
         <form action="" class="header__search" type="search">
             <div>
@@ -23,8 +26,10 @@
         </form>
     </header>
     <aside>
-        <button>×</button>
         <nav class="aside__nav">
+            <button>
+                <span>これはボタンです</span>
+            </button>
             <ul class="aside__nav__list">
                 <li class="aside__nav__list__headline">バーガー</li>
                 <ul>
@@ -133,5 +138,6 @@
             <p class="footer__copyrights">Copyrights:RaiseTech</p>
         </div>
     </footer>
+    <script src="./js/hamburgerMenu.js"></script>
 </body>
 </html>
