@@ -5,3 +5,5 @@ jQuery( function( $ ) {
         $( "body" ).toggleClass( "is-open" );    
     });
 });
+
+console.log("sake");
