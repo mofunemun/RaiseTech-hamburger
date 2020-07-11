@@ -328,18 +328,26 @@ svg:not([fill]) {
 
 header {
   width: 100%;
-  height: 200px;
+  height: 25vh;
   background-color: #FFF7EF;
   position: relative;
+}
+
+header > div {
+  padding-top: 5vh;
 }
 
 aside {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
+  height: calc(350vh + 2px);
   top: 0;
-  right: 0;
-  visibility: hidden;
+  left: 100%;
+}
+
+aside .is-open {
+  left: 0;
 }
 
 aside > nav {
@@ -350,6 +358,10 @@ aside > nav {
   top: 0;
   right: 0;
   height: 200vh;
+}
+
+main {
+  height: calc(305vh);
 }
 
 footer {
@@ -368,10 +380,16 @@ footer > div {
   margin: 0 auto;
 }
 
-.header__logo {
-  text-align: center;
+header > div {
+  width: 100%;
+}
+
+header > div > h1 {
+  width: 300px;
   font-size: 40px;
+  text-align: center;
   color: #707070;
+  margin: 0 auto;
 }
 
 .header__menu {
@@ -486,7 +504,7 @@ footer > div {
   color: inherit;
 }
 
-nav > button > span {
+.aside__nav__button {
   font-size: 0;
   position: absolute;
   top: 0;
@@ -723,10 +741,11 @@ nav > button > span {
 
 .main__access {
   width: 100%;
+  height: 95vh;
 }
 
 .main__access > div {
-  padding: 5vh 0;
+  padding-top: 4vh;
   position: relative;
   height: 100%;
 }

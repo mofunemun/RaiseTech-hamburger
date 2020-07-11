@@ -2,9 +2,13 @@ aside{
     width: 100%;
     background-color: rgba($color: #000000, $alpha: 0.7);
     position: absolute;
+    height: calc(350vh + 2px);
     top: 0;
-    right: 0;
-    visibility: hidden;
+    left: 100%;
+    & .is-open{
+        left:0;
+    }
+    // visibility: hidden;
     >nav{
         width: 90%;
         padding-top: 20vh;
