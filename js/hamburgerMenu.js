@@ -1,5 +1,5 @@
-$('.header__menu').click(function(){
-    $(aside).toggleClass('is-open');
-    $('.aside__nav__button').toggleClass('is-open');
-    $('.header__menu').toggleClass('is-open');
+$('.header__menu').on('click',function(){
+    $("#asideMenu").toggleClass('is-open');
+    $("#headerButton").toggleClass('is-open');
+    $("#asideMenuButton").toggleClass('is-open');
 });

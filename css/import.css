@@ -344,6 +344,7 @@ aside {
   height: calc(350vh + 2px);
   top: 0;
   left: 100%;
+  z-index: 2;
 }
 
 aside .is-open {
@@ -691,6 +692,7 @@ header > div > h1 {
 .aside__nav__list {
   list-style: none;
   margin-bottom: 10vh;
+  margin-left: 30px;
 }
 
 .aside__nav__list > ul {
