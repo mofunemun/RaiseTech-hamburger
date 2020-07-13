@@ -6,6 +6,7 @@
     height: 60px;
     background-color: #F2EDE9;
     position: relative;
+    z-index: 5;
     &::before,
     &::after{
         content: '';
@@ -33,7 +34,7 @@
         display: block;
         transition: transform 0.2s;
     }
-    & .is-open{
+    &.is-open{
         &::before{
             transform: rotate(45deg);
             top:28px;

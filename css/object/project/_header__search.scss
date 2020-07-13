@@ -1,16 +1,7 @@
 @import "../utility/variables";
 
-.header__search > div{
+.header__search{
     width: 80%;
-    margin: 1.5rem auto;
-    padding: 3px;
-    display: flex;
-    justify-content: space-around;
-    & >div{
-        width: 65%;
-        border: 1px solid $gray;
-        border-radius: 5px;
-        background-color: white;
-        display: flex;
-    }
+    height: 6vh;
+    margin: 0 auto;
 }

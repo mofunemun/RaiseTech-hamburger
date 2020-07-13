@@ -344,10 +344,10 @@ aside {
   height: calc(350vh + 2px);
   top: 0;
   left: 100%;
-  z-index: 2;
+  z-index: 3;
 }
 
-aside .is-open {
+aside.is-open {
   left: 0;
 }
 
@@ -400,6 +400,7 @@ header > div > h1 {
   height: 60px;
   background-color: #F2EDE9;
   position: relative;
+  z-index: 5;
 }
 
 .header__menu .clearfix::after {
@@ -444,42 +445,40 @@ header > div > h1 {
   transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
-.header__menu .is-open::before {
+.header__menu.is-open::before {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   top: 28px;
 }
 
-.header__menu .is-open::after {
+.header__menu.is-open::after {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   top: 28px;
 }
 
-.header__menu .is-open > span {
+.header__menu.is-open > span {
   display: none;
 }
 
 .header__search__searchbox {
-  width: 80%;
-  height: 3rem;
-  background-color: white;
+  width: 60%;
+  line-height: 6vh;
+  background-color: #fff;
 }
 
 .header__search__searchbtn {
-  width: 20%;
-  height: 3rem;
-  border: solid 1px #707070;
-  border-radius: 5px;
-  background-color: #f2ede9;
-  color: #707070;
+  width: 15%;
+  line-height: 6vh;
 }
 
 .header__search__searchicon {
-  height: 3rem;
-  width: 20%;
-  display: inline-block;
-  text-align: center;
+  line-height: 6vh;
+  position: relative;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  width: 15%;
 }
 
 .aside__nav__list__headline {
@@ -546,7 +545,7 @@ header > div > h1 {
 
 .main__eatstyle__description {
   width: 90%;
-  height: calc(80vh - 102px);
+  height: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -565,20 +564,21 @@ header > div > h1 {
 
 .main__eatstyle__description > div {
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 16px 4px;
+  margin: 16px 4px;
 }
 
 .main__eatstyle__description > div > h3 {
   font-family: "'M PLUS 1p', sans-serif";
   font-size: 22px;
   font-weight: 400;
-  margin-bottom: 16px;
+  padding: 8px 0 16px 4px;
 }
 
 .main__eatstyle__description > div > p {
   font-family: "'M PLUS 1p', sans-serif";
   font-size: 16px;
   font-weight: 400;
+  padding: 8px 0 16px 4px;
 }
 
 .main__access__headline {
@@ -668,25 +668,10 @@ header > div > h1 {
   padding: 10px;
 }
 
-.header__search > div {
+.header__search {
   width: 80%;
-  margin: 1.5rem auto;
-  padding: 3px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.header__search > div > div {
-  width: 65%;
-  border: 1px solid #707070;
-  border-radius: 5px;
-  background-color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  height: 6vh;
+  margin: 0 auto;
 }
 
 .aside__nav__list {
@@ -702,7 +687,7 @@ header > div > h1 {
 
 .main__title {
   width: 100%;
-  height: 40vh;
+  height: 30vh;
   background-image: url(../images/3ba5a44414bb3c0885c27ff614596431.png);
   background-size: 100% auto;
   position: relative;
@@ -739,11 +724,12 @@ header > div > h1 {
   height: 80vh;
   background-image: url(../images/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.png);
   background-size: 100% auto;
+  position: relative;
 }
 
 .main__access {
   width: 100%;
-  height: 95vh;
+  height: 105vh;
 }
 
 .main__access > div {
