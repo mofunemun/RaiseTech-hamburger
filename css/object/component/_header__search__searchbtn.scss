@@ -10,6 +10,15 @@
 // }
 
 .header__search__searchbtn{
-    width: 15%;
-    line-height: 6vh;
+    width: 20%;
+    height: 6vh;
+    margin-left: 5%;
+    border: solid 1px $gray;
+    border-radius: 5px;
+    background-color: #f2ede9;
+    color: $gray;
+}
+
+label{
+    font-size: 0;
 }

@@ -1,15 +1,14 @@
 .main__eatstyle__description{
     width: 90%;
-    height: 50%;
+    height: calc(68vh * 0.75);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     margin: 0 auto;
-    padding-top: 30vh;
+    margin-top: calc(68vh * 0.25);
     > div{
         background-color: rgba($color: #fff, $alpha: 0.8);
-        margin: 16px 4px;
 
         >h3{
             font-family: $font_m;

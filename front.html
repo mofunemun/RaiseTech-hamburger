@@ -18,9 +18,10 @@
             <h1 class="header__logo">Hamburger</h1>
         </div>
         <div>
-            <form action="" class="header__search" type="search">
+            <form action="" class="header__search" type="search" method="POST">
                 <button type="submit" class="header__search__searchicon"><i class="fas fa-search"></i></button>
-                <input type="search" class="header__search__searchbox">
+                <label for="searchbox">これは検索フォームです</label>
+                <input type="search" name="searchbox" class="header__search__searchbox">
                 <input type="submit" value="検索" class="header__search__searchbtn">
             </form>
         </div>

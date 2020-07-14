@@ -463,22 +463,37 @@ header > div > h1 {
 
 .header__search__searchbox {
   width: 60%;
-  line-height: 6vh;
+  padding-left: 2%;
+  height: 6vh;
   background-color: #fff;
+  border-top: solid 1px #707070;
+  border-bottom: solid 1px #707070;
+  border-right: solid 1px #707070;
+  border-radius: 0 5px 5px 0;
 }
 
 .header__search__searchbtn {
-  width: 15%;
-  line-height: 6vh;
+  width: 20%;
+  height: 6vh;
+  margin-left: 5%;
+  border: solid 1px #707070;
+  border-radius: 5px;
+  background-color: #f2ede9;
+  color: #707070;
+}
+
+label {
+  font-size: 0;
 }
 
 .header__search__searchicon {
-  line-height: 6vh;
-  position: relative;
   background-color: #fff;
-  top: 0;
-  left: 0;
   width: 15%;
+  height: 6vh;
+  border-top: solid 1px #707070;
+  border-bottom: solid 1px #707070;
+  border-left: solid 1px #707070;
+  border-radius: 5px 0 0 5px;
 }
 
 .aside__nav__list__headline {
@@ -528,12 +543,11 @@ header > div > h1 {
 }
 
 .main__eatstyle__headline {
+  height: calc(12vh - 6px);
   font-weight: 700;
   font-size: 36px;
   color: white;
-  margin-top: 24px;
-  margin-left: 12px;
-  margin-bottom: 24px;
+  padding: 3vh 16px 0 16px;
 }
 
 .main__eatstyle__headline + div {
@@ -545,7 +559,7 @@ header > div > h1 {
 
 .main__eatstyle__description {
   width: 90%;
-  height: 50%;
+  height: calc(68vh * 0.75);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -559,12 +573,11 @@ header > div > h1 {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin: 0 auto;
-  padding-top: 30vh;
+  margin-top: calc(68vh * 0.25);
 }
 
 .main__eatstyle__description > div {
   background-color: rgba(255, 255, 255, 0.8);
-  margin: 16px 4px;
 }
 
 .main__eatstyle__description > div > h3 {
@@ -672,6 +685,9 @@ header > div > h1 {
   width: 80%;
   height: 6vh;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .aside__nav__list {

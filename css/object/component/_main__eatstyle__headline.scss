@@ -1,11 +1,10 @@
 .main__eatstyle__headline{
     // font-family: $font_r;
+    height: calc(12vh - 6px);
     font-weight: 700;
     font-size: 36px;
     color: white;
-    margin-top: 24px;
-    margin-left: 12px;
-    margin-bottom: 24px;
+    padding:3vh 16px 0 16px;
     +div{
         width: 50px;
         height: 2px;
