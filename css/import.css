@@ -345,6 +345,8 @@ aside {
   top: 0;
   left: 100%;
   z-index: 3;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
 }
 
 aside.is-open {
@@ -359,6 +361,10 @@ aside > nav {
   top: 0;
   right: 0;
   height: 200vh;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 main {
@@ -462,7 +468,7 @@ header > div > h1 {
 }
 
 .header__search__searchbox {
-  width: 60%;
+  width: 75%;
   padding-left: 2%;
   height: 6vh;
   background-color: #fff;
@@ -490,11 +496,19 @@ label {
   background-color: #fff;
   width: 15%;
   height: 6vh;
-  padding: 15px;
   border-top: solid 1px #707070;
   border-bottom: solid 1px #707070;
   border-left: solid 1px #707070;
   border-radius: 5px 0 0 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .aside__nav__list__headline {
