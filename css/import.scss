@@ -3,6 +3,11 @@
 
 @import "foundation/typography";
 
+// ↓utility↓
+@import "object/utility/clearfix";
+
+@import "object/utility/variables";
+
 // ↓layout↓
 @import "layout/header";
 

@@ -326,6 +326,12 @@ svg:not([fill]) {
   font-family: Roboto;
 }
 
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 header {
   width: 100%;
   height: 25vh;
