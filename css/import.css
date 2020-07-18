@@ -369,11 +369,8 @@ aside > nav {
   height: 200vh;
 }
 
-body {
+.wrapper {
   position: relative;
-}
-
-body > div {
   overflow-x: hidden;
 }
 
