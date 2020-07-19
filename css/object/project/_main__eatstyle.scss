@@ -4,6 +4,18 @@
     justify-content: space-around;
     background-color: white;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include pc{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    };
+    @include tab{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    };
+    @include sp{
+        flex-direction: column;
+        align-items: center;
+    };
 }

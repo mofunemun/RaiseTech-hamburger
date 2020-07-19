@@ -692,9 +692,20 @@ label {
           transform: translateY(-50%);
   font-family: "'M PLUS 1p', sans-serif";
   font-weight: 400;
-  font-size: 36px;
   color: white;
   margin-left: 7vw;
+}
+
+@media (max-width: 1500px) {
+  .main__title__logo {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 864px) {
+  .main__title__logo {
+    font-size: 36px;
+  }
 }
 
 .main__eatstyle__headline {
@@ -714,7 +725,7 @@ label {
 
 .main__eatstyle__description {
   width: 90%;
-  height: calc(68vh * 0.75);
+  height: calc(68vh * 0.7);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -728,7 +739,7 @@ label {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin: 0 auto;
-  margin-top: calc(68vh * 0.25);
+  margin-top: calc(68vh * 0.3);
 }
 
 .main__eatstyle__description > div {
@@ -881,11 +892,40 @@ label {
 }
 
 .main__title {
-  width: 100%;
   height: 30vh;
   background-image: url(../images/3ba5a44414bb3c0885c27ff614596431.png);
   background-size: 100% auto;
   position: relative;
+}
+
+@media (max-width: 1500px) {
+  .main__title {
+    width: 80%;
+  }
+}
+
+@media (max-width: 864px) {
+  .main__title {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1500px) {
+  .main__title {
+    background-position: 0 -19vh;
+  }
+}
+
+@media (max-width: 864px) {
+  .main__title {
+    background-position: 0 -16vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .main__title {
+    background-position: 0;
+  }
 }
 
 .main__eatstyle {
@@ -897,20 +937,53 @@ label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+
+@media (max-width: 1500px) {
+  .main__eatstyle {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 864px) {
+  .main__eatstyle {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .main__eatstyle {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .main__eatstyle__eatin {
   width: 90%;
   height: 80vh;
   background-image: url(../images/473d814b175bd517b56eb309f2958725.png);
-  background-size: 100% auto;
+  background-size: cover;
   position: relative;
 }
 
@@ -918,7 +991,7 @@ label {
   width: 90%;
   height: 80vh;
   background-image: url(../images/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.png);
-  background-size: 100% auto;
+  background-size: cover;
   position: relative;
 }
 
