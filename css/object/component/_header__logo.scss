@@ -17,13 +17,16 @@
     };
     >h1{
         @include pc{
-            height: 9vh;
+            height: 12vh;
+            font-size: 64px;
             margin: 0;
-            line-height: 9vh;
+            line-height: 12vh;
+            color: $gray;
         }
         @include tab{
             height: 6vh;
             width: 300px;
+            font-size: 40px;
             text-align: center;
             color: $gray;
             margin: 0 auto;

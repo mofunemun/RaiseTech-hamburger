@@ -6,7 +6,15 @@
     color: white;
     padding:3vh 16px 0 16px;
     +div{
-        width: 50px;
+        @include pc{
+            width: 80px;
+        };
+        @include tab{
+            width: 50px;
+        };
+        @include sp{
+            width: 50px;
+        };
         height: 2px;
         border-top: white solid 6px;
         margin-left:16px;

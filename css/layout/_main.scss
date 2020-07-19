@@ -1,8 +1,25 @@
 .wrapper{
     position: relative;
     overflow-x: hidden;
+    // @include pc{
+    //     height: 355vh;
+    // };
+    // @include tab{
+    //     height: 228vh;
+    // };
+    // @include sp{
+    //     height: 350vh;
+    // };
 }
 
 main{
-    height: calc(305vh);
+    @include pc{
+        height: 180vh;
+    };
+    @include tab{
+        height: 183vh;
+    };
+    @include sp{
+        height: 305vh;
+    };
 }

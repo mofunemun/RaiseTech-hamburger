@@ -4,15 +4,33 @@
     font-weight: 400;
     color: white;
     padding: 2vh 0;
-    width: 70%;
-    margin: 0 auto;
+    @include pc{
+        width: 90%;
+        margin: 0 auto;
+    }
+    @include tab{
+        width: 70%;
+        margin: 0 auto;
+    }
+    @include sp{
+        width: 70%;
+        margin: 0 auto;
+    }
     position: relative;
     z-index: 2;
     +div{
-        width: 8vh;
+        width: 80px;
         border-top: white solid 3px;
         position: absolute;
-        left:15%;
+        @include pc{
+            left: 5%;
+        }
+        @include tab{
+            left:15%;
+        }
+        @include sp{
+            left:15%;
+        }
         // height: 5vh;
         margin-bottom: 5vh;
         z-index: 2;
