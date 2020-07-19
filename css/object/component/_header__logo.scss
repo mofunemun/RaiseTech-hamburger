@@ -8,13 +8,26 @@
 //     padding-top: 4vh;
 // }
 
-header>div{
-    width: 100%;
+.header__l{
+    @include pc{
+        width: 35%;
+    };
+    @include tab{
+        width: 100%;
+    };
     >h1{
-        width: 300px;
-        font-size: 40px;
-        text-align: center;
-        color: $gray;
-        margin: 0 auto;
+        @include pc{
+            height: 9vh;
+            margin: 0;
+            line-height: 9vh;
+        }
+        @include tab{
+            height: 6vh;
+            width: 300px;
+            text-align: center;
+            color: $gray;
+            margin: 0 auto;
+            line-height: 6vh;
+        }
     }
 }

@@ -1,47 +1,91 @@
 .header__menu{
+    @include pc{
+        width: 0;
+        height: 0;
+    };
+    @include tab{
+        width: 90px;
+        height: 90px;
+    };
+    @include sp{
+        width: 60px;
+        height: 60px;
+    };
     float: right;
     text-align: right;
     @import "../utility/clearfix";
-    width: 60px;
-    height: 60px;
     background-color: #F2EDE9;
     position: relative;
     z-index: 5;
     &::before,
     &::after{
-        content: '';
-        width: $btnWidth;
-        height: $btnHeight;
-        background: #fff;
         position: absolute;
-        left:calc(50% - #{$btnWidth} / 2);
+        @include tab{
+            width: $btnWidth * 1.5;
+            height: $btnHeight * 1.5;
+            left:calc(50% - #{$btnWidth * 1.5} / 2);
+        }
+        @include sp{
+            width: $btnWidth;
+            height: $btnHeight;
+            left:calc(50% - #{$btnWidth} / 2);
+        }
+        content: '';
+        background: #fff;
         display: block;
         transition: transform 0.2s;
     }
     &::before{
-        top:22px;
+        @include tab{
+            top:33px;
+        };
+        @include sp{
+            top:22px;
+        };
     }
     &::after{
-        top:38px;
+        @include tab{
+            top:56px;
+        };
+        @include sp{
+            top:38px;
+        }
     }
     >span{
-        width: $btnWidth;
-        height: $btnHeight;
+        position: absolute;
+        @include tab{
+            width: $btnWidth * 1.5;
+            height: $btnHeight * 1.5;
+            left: calc(50% - #{$btnWidth * 1.5} / 2);
+        };
+        @include sp{
+            width: $btnWidth;
+            height: $btnHeight;
+            left: calc(50% - #{$btnWidth} / 2);
+        };
         font-size: 0;
         background: #fff;
-        position: absolute;
-        left: calc(50% - #{$btnWidth} / 2);
         display: block;
         transition: transform 0.2s;
     }
     &.is-open{
         &::before{
             transform: rotate(45deg);
-            top:28px;
+            @include tab{
+                top:43px;
+            };
+            @include sp{
+                top:28px;
+            };   
         }
         &::after{
             transform: rotate(-45deg);
-            top:28px;
+            @include tab{
+                top:43px;
+            };
+            @include sp{
+                top:28px;
+            };
         }
         >span{
             display: none;
