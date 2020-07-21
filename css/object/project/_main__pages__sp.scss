@@ -1,0 +1,14 @@
+.main__pages__sp{
+    width: 100%;
+    @include pc{
+        display: none;
+    };
+    @include tab{
+        display: none;
+    };
+    @include sp{
+        display: flex;
+        justify-content: space-between;
+        color: #707070;
+    }
+}

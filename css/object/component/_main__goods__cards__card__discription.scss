@@ -1,0 +1,38 @@
+.main__goods__cards__card >div{
+    width: 90%;
+    height: 33vh;
+    margin: 0 auto;
+    >h3{
+        font-size: 20px;
+        font-weight: 400;
+        color: white;
+        font-family: $font_m;
+        padding: calc((6vh - 30px) / 2) 0;
+    }
+    >h4{
+        font-size: 16px;
+        font-weight: 400;
+        color: white;
+        font-family: $font_m;
+        padding: calc((4vh - 24px) / 2) 0;
+    }
+    >p{
+        font-size: 16px;
+        font-weight: 400;
+        color: white;
+        font-family: $font_m;
+        padding: calc((11vh - 96px) / 2) 0;
+    }
+    >button{
+        width: 50%;
+        background-color: white;
+        color: #707070;
+        padding: 6px;
+        border-radius: 3vh;
+        position: relative;
+        top: 6vh;
+        transform: translateY(-50%);
+        display: block;
+        margin: 0 auto;
+    }
+}

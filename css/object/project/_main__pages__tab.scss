@@ -1,0 +1,14 @@
+.main__pages__tab{
+    width: 100%;
+    @include pc{
+        display: flex;
+        justify-content: space-between;
+    };
+    @include tab{
+        display: flex;
+        justify-content: space-between;
+    };
+    @include sp{
+        display: none;
+    }
+}

@@ -1,6 +1,15 @@
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+}
+
 .wrapper{
     position: relative;
     overflow-x: hidden;
+    height: 100%;
     // @include pc{
     //     height: 355vh;
     // };
@@ -12,14 +21,14 @@
     // };
 }
 
-main{
-    @include pc{
-        height: 180vh;
-    };
-    @include tab{
-        height: 183vh;
-    };
-    @include sp{
-        height: 305vh;
-    };
-}
+// main{
+//     @include pc{
+//         height: 180vh;
+//     };
+//     @include tab{
+//         height: 183vh;
+//     };
+//     @include sp{
+//         height: 305vh;
+//     };
+// }

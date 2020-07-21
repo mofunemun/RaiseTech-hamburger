@@ -456,27 +456,18 @@ aside > nav {
   }
 }
 
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
 .wrapper {
   position: relative;
   overflow-x: hidden;
-}
-
-@media (max-width: 2400px) {
-  main {
-    height: 180vh;
-  }
-}
-
-@media (max-width: 864px) {
-  main {
-    height: 183vh;
-  }
-}
-
-@media (max-width: 480px) {
-  main {
-    height: 305vh;
-  }
+  height: 100%;
 }
 
 footer {
@@ -759,14 +750,9 @@ label {
 }
 
 .main__title__logo {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  font-family: "'M PLUS 1p', sans-serif";
-  font-weight: 400;
+  font-family: "'Roboto', sans-serif";
+  font-weight: 700;
   color: white;
-  margin-left: 7vw;
 }
 
 @media (max-width: 2400px) {
@@ -1039,6 +1025,87 @@ label {
   }
 }
 
+.main__goods__cards__card > div {
+  width: 90%;
+  height: 33vh;
+  margin: 0 auto;
+}
+
+.main__goods__cards__card > div > h3 {
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  font-family: "'M PLUS 1p', sans-serif";
+  padding: calc((6vh - 30px) / 2) 0;
+}
+
+.main__goods__cards__card > div > h4 {
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  font-family: "'M PLUS 1p', sans-serif";
+  padding: calc((4vh - 24px) / 2) 0;
+}
+
+.main__goods__cards__card > div > p {
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  font-family: "'M PLUS 1p', sans-serif";
+  padding: calc((11vh - 96px) / 2) 0;
+}
+
+.main__goods__cards__card > div > button {
+  width: 50%;
+  background-color: white;
+  color: #707070;
+  padding: 6px;
+  border-radius: 3vh;
+  position: relative;
+  top: 6vh;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: block;
+  margin: 0 auto;
+}
+
+.main__goods__cards__card img {
+  width: 100%;
+  height: 27vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+.main__goods__discription h3 {
+  font-size: 28px;
+  font-family: "'M PLUS 1p', sans-serif";
+  color: #3C2A10;
+  font-weight: 400;
+  margin: 1.5vh 0 1.5vh 0;
+}
+
+.main__goods__discription p {
+  font-size: 16px;
+  font-family: "'M PLUS 1p', sans-serif";
+  color: #3C2A10;
+  font-weight: 400;
+  margin: 2vh 0 2vh 0;
+}
+
+.main__pages__sp > a {
+  text-decoration: none;
+  font-weight: 400;
+  color: inherit;
+}
+
+.main__title__sublogo {
+  font-family: "'Roboto', sans-serif";
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+}
+
 .footer__copyrights {
   color: white;
   text-align: center;
@@ -1101,41 +1168,105 @@ label {
   list-style: none;
 }
 
-.main__title {
+.main__title1 {
   height: 30vh;
   background-image: url(../images/3ba5a44414bb3c0885c27ff614596431.png);
   background-size: 100% auto;
+  background-color: rgba(225, 225, 225, 0.5);
   position: relative;
 }
 
 @media (max-width: 2400px) {
-  .main__title {
+  .main__title1 {
     width: 80%;
   }
 }
 
 @media (max-width: 864px) {
-  .main__title {
+  .main__title1 {
     width: 100%;
   }
 }
 
 @media (max-width: 2400px) {
-  .main__title {
+  .main__title1 {
     background-position: 0 -19vh;
   }
 }
 
 @media (max-width: 864px) {
-  .main__title {
+  .main__title1 {
     background-position: 0 -16vh;
   }
 }
 
 @media (max-width: 480px) {
-  .main__title {
+  .main__title1 {
     background-position: 0;
   }
+}
+
+.main__title1 > section {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin-left: 10%;
+}
+
+.main__title2 {
+  height: 30vh;
+  background-image: url(../images/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.png);
+  background-color: rgba(225, 225, 225, 0.5);
+  position: relative;
+}
+
+@media (max-width: 2400px) {
+  .main__title2 {
+    width: 80%;
+  }
+}
+
+@media (max-width: 864px) {
+  .main__title2 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 2400px) {
+  .main__title2 {
+    background-position: 0 -19vh;
+  }
+}
+
+@media (max-width: 864px) {
+  .main__title2 {
+    background-position: 0 -16vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .main__title2 {
+    background-size: 230% auto;
+    background-position: -80px -80vh;
+  }
+}
+
+.main__title2 > div {
+  width: 100%;
+  height: 30vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.main__title2 > section {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin-left: 10%;
 }
 
 .main__eatstyle {
@@ -1272,5 +1403,101 @@ label {
   padding-top: 4vh;
   position: relative;
   height: 100%;
+}
+
+.main__goods__cards {
+  width: 90%;
+  height: 185vh;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__goods__cards__card {
+  width: 100%;
+  height: 60vh;
+  background-color: #3C2B1C;
+}
+
+.main__goods__discription {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.main__pages {
+  margin: 5vh auto 0 auto;
+  height: 6vh;
+  width: 90%;
+}
+
+.main__pages__sp {
+  width: 100%;
+}
+
+@media (max-width: 2400px) {
+  .main__pages__sp {
+    display: none;
+  }
+}
+
+@media (max-width: 864px) {
+  .main__pages__sp {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .main__pages__sp {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    color: #707070;
+  }
+}
+
+.main__pages__tab {
+  width: 100%;
+}
+
+@media (max-width: 2400px) {
+  .main__pages__tab {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (max-width: 864px) {
+  .main__pages__tab {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (max-width: 480px) {
+  .main__pages__tab {
+    display: none;
+  }
 }
 /*# sourceMappingURL=import.css.map */
