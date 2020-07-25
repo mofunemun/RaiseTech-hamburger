@@ -11,17 +11,17 @@ aside{
     background-color: rgba($color: #000000, $alpha: 0.7);
     position: absolute;
     @include pc{
-        height: 205vh;
+        height: calc(100% - 20vh);
         top:0;
         left: 80%;
     };
     @include tab{
-        height: 227vh;
+        height: 100%;
         top: 0;
         left: 100%;
     };
     @include sp{
-        height: 350vh;
+        height: 100%;
         top:0;
         left: 100%;
     };
@@ -34,13 +34,15 @@ aside{
     >nav{
         @include pc{
             width: 100%;
-            height: 205vh;
+            height: 100%;
         };
         @include tab{
             width: 90%;
+            height: 90%;
         };
         @include sp{
             width: 90%;
+            height: 90%;
         };
         padding-top: 20vh;
         background-color: #F2EDE9;

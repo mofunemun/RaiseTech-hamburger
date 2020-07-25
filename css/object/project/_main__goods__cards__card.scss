@@ -1,5 +1,15 @@
 .main__goods__cards__card{
     width: 100%;
-    height: 60vh;
+    height: 32%;
     background-color: #3C2B1C;
+    display: flex;
+    @include pc{
+        flex-direction: row;
+    };
+    @include tab{
+        flex-direction: row;
+    };
+    @include sp{
+        flex-direction: column;
+    };
 }

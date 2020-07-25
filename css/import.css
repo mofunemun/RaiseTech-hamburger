@@ -394,7 +394,7 @@ aside {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 680px) {
   aside {
     width: 100%;
   }
@@ -402,7 +402,7 @@ aside {
 
 @media (max-width: 2400px) {
   aside {
-    height: 205vh;
+    height: calc(100% - 20vh);
     top: 0;
     left: 80%;
   }
@@ -410,15 +410,15 @@ aside {
 
 @media (max-width: 864px) {
   aside {
-    height: 227vh;
+    height: 100%;
     top: 0;
     left: 100%;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 680px) {
   aside {
-    height: 350vh;
+    height: 100%;
     top: 0;
     left: 100%;
   }
@@ -440,19 +440,21 @@ aside > nav {
 @media (max-width: 2400px) {
   aside > nav {
     width: 100%;
-    height: 205vh;
+    height: 100%;
   }
 }
 
 @media (max-width: 864px) {
   aside > nav {
     width: 90%;
+    height: 90%;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 680px) {
   aside > nav {
     width: 90%;
+    height: 90%;
   }
 }
 
@@ -467,7 +469,7 @@ body {
 .wrapper {
   position: relative;
   overflow-x: hidden;
-  height: 100%;
+  min-height: 100%;
 }
 
 footer {
@@ -542,7 +544,7 @@ footer > div {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 680px) {
   .header__menu {
     width: 60px;
     height: 60px;
@@ -574,7 +576,7 @@ footer > div {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 680px) {
   .header__menu::before, .header__menu::after {
     width: 20px;
     height: 1px;
@@ -588,7 +590,7 @@ footer > div {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 680px) {
   .header__menu::before {
     top: 22px;
   }
@@ -600,7 +602,7 @@ footer > div {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 680px) {
   .header__menu::after {
     top: 38px;
   }
@@ -625,7 +627,7 @@ footer > div {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 680px) {
   .header__menu > span {
     width: 20px;
     height: 1px;
@@ -644,7 +646,7 @@ footer > div {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 680px) {
   .header__menu.is-open::before {
     top: 28px;
   }
@@ -661,7 +663,7 @@ footer > div {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 680px) {
   .header__menu.is-open::after {
     top: 28px;
   }
@@ -793,7 +795,7 @@ label {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 680px) {
   .main__eatstyle__headline + div {
     width: 50px;
   }
@@ -830,7 +832,7 @@ label {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 680px) {
   .main__eatstyle__description {
     height: calc(68vh * 0.7);
     margin-top: calc(68vh * 0.3);
@@ -879,7 +881,7 @@ label {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 680px) {
   .main__access__headline {
     width: 70%;
     margin: 0 auto;
@@ -907,7 +909,7 @@ label {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 680px) {
   .main__access__headline + div {
     left: 15%;
   }
@@ -939,7 +941,7 @@ label {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 680px) {
   .main__access__paragraph {
     width: 70%;
     position: relative;
@@ -982,7 +984,7 @@ label {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 680px) {
   .main__access__dark {
     width: 100%;
     height: 60%;
@@ -1015,7 +1017,7 @@ label {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 680px) {
   .main__access__bright {
     width: 100%;
     height: 40%;
@@ -1026,9 +1028,28 @@ label {
 }
 
 .main__goods__cards__card > div {
-  width: 90%;
-  height: 33vh;
   margin: 0 auto;
+}
+
+@media (max-width: 2400px) {
+  .main__goods__cards__card > div {
+    width: 45%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 864px) {
+  .main__goods__cards__card > div {
+    width: 45%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 680px) {
+  .main__goods__cards__card > div {
+    width: 90%;
+    height: 55%;
+  }
 }
 
 .main__goods__cards__card > div > h3 {
@@ -1036,7 +1057,18 @@ label {
   font-weight: 400;
   color: white;
   font-family: "'M PLUS 1p', sans-serif";
-  padding: calc((6vh - 30px) / 2) 0;
+}
+
+@media (max-width: 864px) {
+  .main__goods__cards__card > div > h3 {
+    padding: calc((30% - 30px) / 2) 0;
+  }
+}
+
+@media (max-width: 680px) {
+  .main__goods__cards__card > div > h3 {
+    padding: calc((6vh - 30px) / 2) 0;
+  }
 }
 
 .main__goods__cards__card > div > h4 {
@@ -1044,7 +1076,18 @@ label {
   font-weight: 400;
   color: white;
   font-family: "'M PLUS 1p', sans-serif";
-  padding: calc((4vh - 24px) / 2) 0;
+}
+
+@media (max-width: 864px) {
+  .main__goods__cards__card > div > h4 {
+    padding: calc((12.5% - 30px) / 2) 0;
+  }
+}
+
+@media (max-width: 680px) {
+  .main__goods__cards__card > div > h4 {
+    padding: calc((4vh - 24px) / 2) 0;
+  }
 }
 
 .main__goods__cards__card > div > p {
@@ -1052,7 +1095,18 @@ label {
   font-weight: 400;
   color: white;
   font-family: "'M PLUS 1p', sans-serif";
-  padding: calc((11vh - 96px) / 2) 0;
+}
+
+@media (max-width: 864px) {
+  .main__goods__cards__card > div > p {
+    padding: 0 0 calc((25% - 30px) / 2) 0;
+  }
+}
+
+@media (max-width: 680px) {
+  .main__goods__cards__card > div > p {
+    padding: calc((11vh - 96px) / 2) 0;
+  }
 }
 
 .main__goods__cards__card > div > button {
@@ -1070,11 +1124,16 @@ label {
 }
 
 .main__goods__cards__card img {
-  width: 100%;
-  height: 27vh;
   -o-object-fit: cover;
      object-fit: cover;
   display: block;
+}
+
+@media (max-width: 680px) {
+  .main__goods__cards__card img {
+    width: 100%;
+    height: 45%;
+  }
 }
 
 .main__goods__discription h3 {
@@ -1082,7 +1141,7 @@ label {
   font-family: "'M PLUS 1p', sans-serif";
   color: #3C2A10;
   font-weight: 400;
-  margin: 1.5vh 0 1.5vh 0;
+  padding: 1.5vh 0 1.5vh 0;
 }
 
 .main__goods__discription p {
@@ -1090,7 +1149,7 @@ label {
   font-family: "'M PLUS 1p', sans-serif";
   color: #3C2A10;
   font-weight: 400;
-  margin: 2vh 0 2vh 0;
+  padding-bottom: 2vh;
 }
 
 .main__pages__sp > a {
@@ -1200,7 +1259,7 @@ label {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 680px) {
   .main__title1 {
     background-position: 0;
   }
@@ -1241,11 +1300,12 @@ label {
 
 @media (max-width: 864px) {
   .main__title2 {
-    background-position: 0 -16vh;
+    background-size: calc(100% + 80px) auto;
+    background-position: -80px -65vh;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 680px) {
   .main__title2 {
     background-size: 230% auto;
     background-position: -80px -80vh;
@@ -1310,7 +1370,7 @@ label {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 680px) {
   .main__eatstyle {
     width: 100%;
     height: 170vh;
@@ -1344,7 +1404,7 @@ label {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 680px) {
   .main__eatstyle__eatin {
     width: 90%;
     height: 80vh;
@@ -1371,7 +1431,7 @@ label {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 680px) {
   .main__eatstyle__takeout {
     width: 90%;
     height: 80vh;
@@ -1392,7 +1452,7 @@ label {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 680px) {
   .main__access {
     width: 100%;
     height: 105vh;
@@ -1407,8 +1467,7 @@ label {
 
 .main__goods__cards {
   width: 90%;
-  height: 185vh;
-  margin: 0 auto;
+  margin: 2vh auto 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1424,10 +1483,58 @@ label {
           align-items: center;
 }
 
+@media (max-width: 2400px) {
+  .main__goods__cards {
+    height: 150vh;
+  }
+}
+
+@media (max-width: 864px) {
+  .main__goods__cards {
+    height: 120vh;
+  }
+}
+
+@media (max-width: 680px) {
+  .main__goods__cards {
+    height: 185vh;
+  }
+}
+
 .main__goods__cards__card {
   width: 100%;
-  height: 60vh;
+  height: 32%;
   background-color: #3C2B1C;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 2400px) {
+  .main__goods__cards__card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media (max-width: 864px) {
+  .main__goods__cards__card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media (max-width: 680px) {
+  .main__goods__cards__card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .main__goods__discription {
@@ -1457,7 +1564,7 @@ label {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 680px) {
   .main__pages__sp {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1495,7 +1602,7 @@ label {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 680px) {
   .main__pages__tab {
     display: none;
   }

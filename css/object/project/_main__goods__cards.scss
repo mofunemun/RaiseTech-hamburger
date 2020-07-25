@@ -1,9 +1,17 @@
 .main__goods__cards{
     width: 90%;
-    height: 185vh;
-    margin: 0 auto;
+    margin: 2vh auto 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    @include pc{
+        height: 150vh;
+    };
+    @include tab{
+        height: 120vh;
+    };
+    @include sp{
+        height: 185vh;
+    };
 }

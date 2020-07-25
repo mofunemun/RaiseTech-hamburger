@@ -5,7 +5,7 @@ $btnHeight: 1px;
 
 $pc: 2400px; // PC
 $tab: 864px; // タブレット
-$sp: 480px;  // スマホ
+$sp: 680px;  // スマホ
 
 @mixin pc {
   @media (max-width: ($pc)) {

@@ -1,6 +1,8 @@
 .main__goods__cards__card img{
-    width: 100%;
-    height: 27vh;
+    @include sp{
+        width: 100%;
+        height: 45%;
+    };
     object-fit: cover;
     display: block;
 }

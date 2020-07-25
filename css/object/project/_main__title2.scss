@@ -12,7 +12,8 @@
         background-position: 0 -19vh;
     };
     @include tab{
-        background-position: 0 -16vh;
+        background-size: calc(100% + 80px) auto;
+        background-position: -80px -65vh;
     };
     @include sp{
         background-size: 230% auto;
