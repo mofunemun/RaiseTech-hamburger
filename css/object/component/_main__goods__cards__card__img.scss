@@ -1,4 +1,12 @@
 .main__goods__cards__card img{
+    @include pc{
+        width: 50%;
+        height: 100%;
+    };
+    @include tab{
+        width: 50%;
+        height: 100%;
+    };
     @include sp{
         width: 100%;
         height: 45%;

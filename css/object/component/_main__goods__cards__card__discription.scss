@@ -17,6 +17,9 @@
         font-weight: 400;
         color: white;
         font-family: $font_m;
+        @include pc{
+            padding: calc((30% - 30px) / 2) 0;
+        };
         @include tab{
             padding: calc((30% - 30px) / 2) 0;
         };
@@ -29,8 +32,11 @@
         font-weight: 400;
         color: white;
         font-family: $font_m;
+        @include pc{
+            padding: calc((15% - 30px) / 2) 0;
+        };
         @include tab{
-            padding: calc((12.5% - 30px) / 2) 0;
+            padding: calc((15% - 30px) / 2) 0;
         };
         @include sp{
             padding: calc((4vh - 24px) / 2) 0;
@@ -41,6 +47,9 @@
         font-weight: 400;
         color: white;
         font-family: $font_m;
+        @include pc{
+            padding: 0 0 calc((25% - 30px) / 2) 0;
+        };
         @include tab{
             padding: 0 0 calc((25% - 30px) / 2) 0;
         };
@@ -52,12 +61,20 @@
         width: 50%;
         background-color: white;
         color: #707070;
-        padding: 6px;
         border-radius: 3vh;
         position: relative;
         top: 6vh;
         transform: translateY(-50%);
         display: block;
         margin: 0 auto;
+        @include pc{
+            padding: 16px;
+        }
+        @include tab{
+            padding: 8px;
+        }
+        @include sp{
+            padding: 6px;
+        }
     }
 }
