@@ -1,0 +1,14 @@
+.main__manyimages__disc__wrapper{
+    width: 100%;
+    .main__manyimages__disc__topimg{
+        width: 100%;
+            >img{
+                display: inline-block;
+                width: 100%;
+                object-fit: contain;
+            }
+    }
+}
+
+
+

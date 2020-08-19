@@ -769,6 +769,10 @@ label {
   }
 }
 
+.normal {
+  font-weight: 400;
+}
+
 .main__eatstyle__headline {
   height: calc(12vh - 6px);
   font-weight: 700;
@@ -1176,6 +1180,74 @@ label {
   font-weight: 400;
   font-size: 16px;
   color: white;
+}
+
+.main__manyimages__disc__wrapper {
+  width: 100%;
+}
+
+.main__manyimages__disc__wrapper .main__manyimages__disc__topimg {
+  width: 100%;
+}
+
+.main__manyimages__disc__wrapper .main__manyimages__disc__topimg > img {
+  display: inline-block;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.main__text__headlines h2 {
+  font-size: 28px;
+  font-family: "'M PLUS 1p', sans-serif";
+  color: #3C2A10;
+  font-weight: 400;
+  padding: 1.5vh 0 1.5vh 0;
+}
+
+.main__text__headlines p {
+  font-size: 16px;
+  font-family: "'M PLUS 1p', sans-serif";
+  color: #3C2A10;
+  font-weight: 400;
+  padding: 1.5vh 0 1.5vh 0;
+}
+
+.main__text__headlines h3, .main__text__headlines h4, .main__text__headlines h5, .main__text__headlines h6 {
+  font-size: 20px;
+  font-family: "'M PLUS 1p', sans-serif";
+  color: #3C2A10;
+  font-weight: 400;
+  padding: 1.5vh 0 1.5vh 0;
+}
+
+.main__text__headlines .main__text__headlines__big3 {
+  font-size: 24px;
+  font-family: "'M PLUS 1p', sans-serif";
+  color: #3C2A10;
+  font-weight: 400;
+  padding: 1.5vh 0 1.5vh 0;
+}
+
+.main__text__quote {
+  background-color: #F5F5F5;
+}
+
+.main__text__quote .main__text__quote__blockquote {
+  width: 90%;
+  margin: 0 auto;
+  padding: 3vh 0 1.5vh 0;
+}
+
+.main__text__quote .main__text__quote__blockquote blockquote {
+  font-size: 16px;
+  color: #3C2A10;
+}
+
+.main__text__quote .main__text__quote__source {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1.5vh 0 3vh 0;
 }
 
 .footer__copyrights {
@@ -1697,6 +1769,16 @@ label {
 
 .main__pages__tab div > button {
   color: #707070;
+}
+
+.main__manyimages {
+  width: 90%;
+  margin: 3vh auto;
+}
+
+.main__text {
+  width: 90%;
+  margin: 0 auto;
 }
 
 .main__title3 {
