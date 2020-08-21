@@ -1182,6 +1182,157 @@ label {
   color: white;
 }
 
+.main__gimmicks__button {
+  background-color: #F2EDE9;
+  border: 1px solid #707070;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 3vh;
+}
+
+.main__gimmicks__button > button {
+  padding: 3vh 40%;
+}
+
+.main__gimmicks__htmlquote__list {
+  padding: 15% 5vh;
+}
+
+.main__gimmicks__htmlquote__list .main__gimmicks__htmlquote__list__items {
+  list-style: none;
+  color: #3C2A10;
+  font-size: 16px;
+}
+
+.main__gimmicks__htmlquote__list .main__gimmicks__htmlquote__list__items > ul {
+  padding-left: 5%;
+}
+
+.main__gimmicks__htmlquote__list .main__gimmicks__htmlquote__list__items > ul > .main__gimmicks__htmlquote__list__subitems {
+  list-style: none;
+  color: inherit;
+  font-size: 16px;
+}
+
+.main__gimmicks__lists__ordered {
+  color: #3C2A10;
+  margin-bottom: 5vh;
+}
+
+.main__gimmicks__lists__ordered > ol {
+  padding-left: 10%;
+  list-style: decimal;
+  padding-bottom: 1.5vh;
+}
+
+.main__gimmicks__lists__ordered > .list2 {
+  padding-left: 20%;
+}
+
+.main__gimmicks__lists__unordered {
+  color: #3C2A10;
+  margin-bottom: 3vh;
+}
+
+.main__gimmicks__lists__unordered > ul {
+  list-style: none;
+  padding-left: 4%;
+  padding-bottom: 1.5vh;
+}
+
+.main__gimmicks__lists__unordered > .list2 {
+  padding-left: 14%;
+}
+
+.main__gimmicks__string {
+  width: 100%;
+  margin-bottom: 6vh;
+}
+
+.main__gimmicks__string > p {
+  color: #3C2A10;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.main__gimmicks__table__items {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.main__gimmicks__table__items th {
+  width: 40%;
+  padding: 3vh 5%;
+  border: 1px solid #3C2A10;
+  text-align: left;
+  font-weight: 400;
+}
+
+.main__gimmicks__table__items td {
+  width: 60%;
+  padding: 3vh 5%;
+  border: 1px solid #3C2A10;
+}
+
+.main__manyimages__disc__btmimg {
+  width: 100%;
+  padding: 1.5vh 5% 3vh 5%;
+}
+
+.main__manyimages__disc__btmimg img {
+  max-width: 100%;
+}
+
+.main__manyimages__disc__midimg2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 3vh;
+}
+
+.main__manyimages__disc__midimg2 div {
+  width: 43%;
+  height: 100%;
+  padding-left: 2%;
+}
+
+.main__manyimages__disc__midimg2 div img {
+  max-width: 100%;
+}
+
+.main__manyimages__disc__midimg2 p {
+  width: 60%;
+  height: 100%;
+  font-size: 16px;
+  color: #3C2A10;
+  font-weight: 400;
+}
+
+.main__manyimages__disc__midimg1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 3vh;
+}
+
+.main__manyimages__disc__midimg1 div {
+  width: 43%;
+  height: 100%;
+  padding-right: 2%;
+}
+
+.main__manyimages__disc__midimg1 div img {
+  max-width: 100%;
+}
+
+.main__manyimages__disc__midimg1 p {
+  width: 60%;
+  height: 100%;
+  font-size: 16px;
+  color: #3C2A10;
+  font-weight: 400;
+}
+
 .main__manyimages__disc__topimg {
   overflow: hidden;
   position: relative;
@@ -1193,6 +1344,16 @@ label {
   top: -45%;
   width: 100%;
   display: inline-block;
+}
+
+.main__manyimages__imgfall__items {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2vh;
+}
+
+.main__manyimages__imgfall__items img {
+  max-width: 100%;
 }
 
 .main__text__headlines h2 {
@@ -1769,9 +1930,29 @@ label {
   color: #707070;
 }
 
+.main__gimmicks {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.main__gimmicks__htmlquote {
+  width: 100%;
+  background-color: #F5F5F5;
+  margin-bottom: 3vh;
+}
+
+.main__gimmicks__table {
+  width: 100%;
+  margin-bottom: 3vh;
+}
+
 .main__manyimages {
   width: 90%;
   margin: 3vh auto;
+}
+
+.main__manyimages__imgfall {
+  width: 100%;
 }
 
 .main__text {
