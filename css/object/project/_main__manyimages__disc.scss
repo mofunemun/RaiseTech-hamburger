@@ -1,0 +1,9 @@
+.main__manyimages__disc{
+    @include pc{
+        width: 90%;
+        margin: 0 auto;
+    }
+    @include tab{
+        width: 100%;
+    }
+}

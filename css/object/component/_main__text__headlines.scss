@@ -1,4 +1,7 @@
 .main__text__headlines{
+    @include pc{
+        margin: 0 5%;
+    }
     h2{
         font-size: 28px;
         font-family: $font_m;
