@@ -1634,6 +1634,118 @@ label {
   margin-left: 10%;
 }
 
+.main__title3 {
+  height: 30vh;
+  background-image: url(../images/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.png);
+  background-color: rgba(225, 225, 225, 0.5);
+  position: relative;
+}
+
+@media (max-width: 2400px) {
+  .main__title3 {
+    width: 80%;
+  }
+}
+
+@media (max-width: 864px) {
+  .main__title3 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 2400px) {
+  .main__title3 {
+    background-size: 100% auto;
+    background-position: 0 -90vh;
+  }
+}
+
+@media (max-width: 864px) {
+  .main__title3 {
+    background-size: calc(100% + 80px) auto;
+    background-position: -80px -65vh;
+  }
+}
+
+@media (max-width: 680px) {
+  .main__title3 {
+    background-size: 230% auto;
+    background-position: -80px -80vh;
+  }
+}
+
+.main__title3 > div {
+  width: 100%;
+  height: 30vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.main__title3 > section {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin-left: 10%;
+}
+
+.main__title4 {
+  height: 30vh;
+  background-image: url(../images/cafe.png);
+  position: relative;
+}
+
+@media (max-width: 2400px) {
+  .main__title4 {
+    width: 80%;
+  }
+}
+
+@media (max-width: 864px) {
+  .main__title4 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 2400px) {
+  .main__title4 {
+    background-size: cover;
+  }
+}
+
+@media (max-width: 864px) {
+  .main__title4 {
+    background-size: cover;
+    background-position: -100px 0;
+  }
+}
+
+@media (max-width: 680px) {
+  .main__title4 {
+    background-size: cover;
+    background-position: -200px 0;
+  }
+}
+
+.main__title4 > div {
+  width: 100%;
+  height: 30vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.main__title4 > section {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin-left: 10%;
+}
+
 .main__eatstyle {
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -2118,62 +2230,5 @@ label {
     width: 90%;
     margin: 0 auto 3vh 0;
   }
-}
-
-.main__title3 {
-  height: 30vh;
-  background-image: url(../images/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.png);
-  background-color: rgba(225, 225, 225, 0.5);
-  position: relative;
-}
-
-@media (max-width: 2400px) {
-  .main__title3 {
-    width: 80%;
-  }
-}
-
-@media (max-width: 864px) {
-  .main__title3 {
-    width: 100%;
-  }
-}
-
-@media (max-width: 2400px) {
-  .main__title3 {
-    background-size: 100% auto;
-    background-position: 0 -90vh;
-  }
-}
-
-@media (max-width: 864px) {
-  .main__title3 {
-    background-size: calc(100% + 80px) auto;
-    background-position: -80px -65vh;
-  }
-}
-
-@media (max-width: 680px) {
-  .main__title3 {
-    background-size: 230% auto;
-    background-position: -80px -80vh;
-  }
-}
-
-.main__title3 > div {
-  width: 100%;
-  height: 30vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.main__title3 > section {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  margin-left: 10%;
 }
 /*# sourceMappingURL=import.css.map */
