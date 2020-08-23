@@ -1,0 +1,15 @@
+
+.main__manyimages__disc__topimg{
+    overflow: hidden;
+    position: relative;
+    padding-top: 45%;
+    >img{
+        position: absolute;
+        top: -45%;
+        width: 100%;
+        display: inline-block;
+    }
+}
+
+
+

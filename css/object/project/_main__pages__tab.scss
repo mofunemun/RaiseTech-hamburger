@@ -1,0 +1,42 @@
+.main__pages__tab{
+    width: 90%;
+    margin: 0 auto;
+    @include pc{
+        display: flex;
+    };
+    @include tab{
+        display: flex;
+    };
+    @include sp{
+        display: none;
+    }
+    >p{
+        width: 15%;
+        display: flex;
+        margin-right: 5%;
+        color: #707070;
+    }
+    div{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        >a{
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            text-decoration: none;
+            color: #707070;
+            border: solid 1px #707070;
+            background-color: white;
+        }
+        >.main__pages__tab__selected{
+            background-color: #3C2B1C;
+            color: white;
+        }
+        >button{
+            color: #707070;
+        }
+    }
+}

@@ -1,0 +1,77 @@
+.main__goods__cards__card__disc{
+    @include pc{
+        width: 45%;
+        height: 100%;
+    };
+    @include tab{
+        width: 45%;
+        height: 100%;
+    };
+    @include sp{
+        width: 90%;
+        height: 55%;
+    };
+    margin: 0 auto;
+    position: relative;
+    >h3{
+        font-size: 20px;
+        font-weight: 400;
+        color: white;
+        font-family: $font_m;
+        width: 100%;
+        height: 20%;
+        display: inline-block;
+        padding: 5% 0;
+    }
+    >h4{
+        font-size: 16px;
+        font-weight: 400;
+        color: white;
+        font-family: $font_m;
+        width: 100%;
+        height: 10%;
+        display: inline-block;
+        padding-bottom: 0.5rem 0;
+    }
+    >p{
+        font-size: 16px;
+        font-weight: 400;
+        color: white;
+        font-family: $font_m;
+        width: 100%;
+        height: 30%;
+        display: inline-block;
+        // @include pc{
+        //     padding:0 0 calc(40% - 72px) 0;
+        // };
+        // @include tab{
+        //     padding:0 0 calc(50% - 96px) 0;
+        // }
+        // @include sp{
+        //     padding: 0 0 calc(40% - 96px) 0;
+        // }
+    }
+    >div{
+        height: 40%;
+        >button{
+            width: 50%;
+            background-color: white;
+            color: #707070;
+            border-radius: 3vh;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            display: block;
+            margin: 0 auto;
+            @include pc{
+                padding: 16px;
+            }
+            @include tab{
+                padding: 8px;
+            }
+            @include sp{
+                padding: 6px;
+            }
+        }
+    }
+}

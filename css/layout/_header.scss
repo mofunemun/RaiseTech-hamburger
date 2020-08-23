@@ -1,6 +1,26 @@
 header{
-    width: 100%;
-    height: 200px;
+    @include pc{
+        width: 80%;
+        display: flex;
+        padding:8vh 2.5% 8vh 5%;
+        align-items: center;
+        justify-content: space-between;
+    }
+    @include tab{
+        width: 100%;
+        display: block;
+        padding: 0;
+    }
+    height:25vh;
     background-color: #FFF7EF;
     position: relative;
+    
+    >div{
+        @include pc{
+            padding-top: 0;
+        }
+        @include tab{
+            padding-top: 5vh;
+        }
+    }
 }

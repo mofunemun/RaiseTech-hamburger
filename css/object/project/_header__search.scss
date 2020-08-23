@@ -1,16 +1,22 @@
 @import "../utility/variables";
-
-.header__search > div{
-    width: 80%;
-    margin: 1.5rem auto;
-    padding: 3px;
-    display: flex;
-    justify-content: space-around;
-    & >div{
-        width: 65%;
-        border: 1px solid $gray;
-        border-radius: 5px;
-        background-color: white;
-        display: flex;
+.header__s{
+    @include pc{
+        width: 40%;
+    };
+    @include tab{
+        width: 100%;
     }
+    
+}
+.header__search{
+    @include pc{
+        width: 100%;
+        margin: 0;
+    }
+    @include tab{
+        width: 80%;
+        margin: 0 auto;
+    }
+    height: 6vh;
+    display: flex;
 }

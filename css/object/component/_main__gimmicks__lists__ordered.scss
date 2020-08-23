@@ -1,0 +1,12 @@
+.main__gimmicks__lists__ordered{
+    color: #3C2A10;
+    margin-bottom: 5vh;
+    >ol{
+        list-style: decimal;
+        padding-bottom: 1.5vh;
+        padding-left: 10%;
+    }
+    >.list2{
+        padding-left: 15%;
+    }
+}

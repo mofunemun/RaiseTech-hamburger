@@ -1,0 +1,11 @@
+.main__manyimages__disc__btmimg{
+    width: 100%;
+    padding:1.5vh 5% 3vh 5%;
+    text-align: center;
+    img{
+        width: 90%;
+        @include pc{
+            width: 50%;
+        }
+    }
+}

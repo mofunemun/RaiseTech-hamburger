@@ -1,0 +1,24 @@
+.main__text__quote{
+    background-color: #F5F5F5;
+    @include pc{
+        width: 90%;
+        margin: 0 auto;
+    }
+    @include tab{
+        width: 100%;
+    }
+    .main__text__quote__blockquote{
+        width: 90%;
+        margin: 0 auto;
+        padding:3vh 0 1.5vh 0;
+        blockquote{
+            font-size: 16px;
+            color: #3C2A10;
+        }
+    }
+    .main__text__quote__source{
+        width: 90%;
+        margin: 0 auto;
+        padding:1.5vh 0 3vh 0;
+    }
+}

@@ -1,0 +1,28 @@
+.main__title1{
+    @include pc{
+        width: 80%;
+    };
+    @include tab{
+        width: 100%;
+    };
+    height: 30vh;
+    background-image: url(../images/3ba5a44414bb3c0885c27ff614596431.png);
+    background-size: 100% auto;
+    background-color: rgba(225,225,225,0.5);
+    @include pc{
+        background-position: 0 -19vh;
+    };
+    @include tab{
+        background-position: 0 -16vh;
+    };
+    @include sp{
+        background-position: 0;
+    };
+    position: relative;
+    >section{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 10%;
+    }
+}

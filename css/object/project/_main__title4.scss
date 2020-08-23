@@ -1,0 +1,36 @@
+.main__title4{
+    @include pc{
+        width: 80%;
+    };
+    @include tab{
+        width: 100%;
+    };
+    height: 30vh;
+    background-image: url(../images/cafe.png);
+    @include pc{
+        background-size: cover;
+    };
+    @include tab{
+        background-size: cover;
+        background-position: -100px 0;
+    };
+    @include sp{
+        background-size: cover;
+        background-position: -200px 0;
+    };
+    position: relative;
+    >div{
+        width: 100%;
+        height: 30vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba($color: #000000, $alpha: 0.5);
+    }
+    >section{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 10%;
+    }
+}

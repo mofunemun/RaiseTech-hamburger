@@ -1,0 +1,11 @@
+.main__manyimages{
+    @include pc{
+        width: 80%;
+        margin: 0 0 3vh 0;
+    }
+    @include tab{
+        width: 90%;
+        margin: 3vh auto;
+        margin: 0 auto 3vh auto;
+    }
+}

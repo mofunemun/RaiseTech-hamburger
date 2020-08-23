@@ -1,0 +1,20 @@
+.main__manyimages__imgfall__items{
+    @include pc{
+        width: 32%;
+        height: auto;
+        margin-bottom: 0.3vh;
+    }
+    @include tab{
+        width: 49%;
+        height: auto;
+        margin-bottom: 0.3vh;
+    }
+    @include sp{
+        width: 100%;
+        height: auto;
+        margin-bottom: 2vh;
+    }
+    img{
+        max-width: 100%;
+    }
+}

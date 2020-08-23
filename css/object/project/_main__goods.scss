@@ -1,0 +1,11 @@
+.main__goods{
+    @include pc{
+        width: 80%;
+    };
+    @include tab{
+        width: 100%;
+    };
+    @include sp{
+        width: 100%;
+    };
+}

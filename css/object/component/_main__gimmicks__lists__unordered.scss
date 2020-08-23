@@ -1,0 +1,12 @@
+.main__gimmicks__lists__unordered{
+    color:#3C2A10;
+    margin-bottom: 3vh;
+    >ul{
+        list-style: none;
+        padding-bottom: 1.5vh;
+        padding-left: calc(10% - 16px);
+    }
+    >.list2{
+        padding-left: calc(15% - 16px);
+    }
+}

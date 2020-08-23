@@ -1,7 +1,19 @@
 .main__access__paragraph{
-    width: 70%;
-    margin: 0 auto;
-    position: relative;
+    @include pc{
+        width: 60%;
+        margin: 4vh 0 0 5%;
+        position: relative;
+    };
+    @include tab{
+        width: 70%;
+        position: relative;
+        margin: 4vh auto 0 auto;
+    };
+    @include sp{
+        width: 70%;
+        position: relative;
+        margin: 4vh auto 0 auto;
+    };
     font-family: $font_m;
     font-size: 14px;
     font-weight: 400;

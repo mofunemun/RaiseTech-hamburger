@@ -1,0 +1,8 @@
+.main__gimmicks{
+    @include pc{
+        width: 80%;
+    }
+    @include tab{
+        width: 100%;
+    }
+}

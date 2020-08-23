@@ -1,0 +1,28 @@
+.main__goods__cards{
+    width: 90%;
+    margin: 2vh auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    @include pc{
+        height: 150vh;
+    };
+    @include tab{
+        height: 120vh;
+    };
+    @include sp{
+        height: 185vh;
+    };
+}
+.searchResult{
+    @include pc{
+        height: 250vh;
+    };
+    @include tab{
+        height: 200vh;
+    };
+    @include sp{
+        height: 300vh;
+    };
+}

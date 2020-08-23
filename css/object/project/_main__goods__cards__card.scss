@@ -1,0 +1,20 @@
+.main__goods__cards__card{
+    width: 100%;
+    background-color: #3C2B1C;
+    display: flex;
+    @include pc{
+        flex-direction: row;
+        height: 32%;
+    };
+    @include tab{
+        flex-direction: row;
+        height: 32%;
+    };
+    @include sp{
+        flex-direction: column;
+        height: 32%;
+    };
+}
+.searchResult > div{
+    height: 19%;
+}

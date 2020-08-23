@@ -1,10 +1,15 @@
 .main__title__logo{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-family: $font_m;
-    font-weight: 400;
-    font-size: 36px;
+    font-family: $font_r;
+    font-weight: 700;
+    @include pc{
+        font-size: 40px;
+    };
+    @include tab{
+        font-size: 36px;
+    };
     color: white;
-    margin-left: 7vw;
+}
+
+.normal{
+    font-weight: 400;
 }

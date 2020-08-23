@@ -3,8 +3,15 @@
 
 @import "foundation/typography";
 
+// ↓utility↓
+@import "object/utility/clearfix";
+
+@import "object/utility/variables";
+
 // ↓layout↓
 @import "layout/header";
+
+@import "layout/aside";
 
 @import "layout/main";
 
@@ -20,6 +27,13 @@
 @import "object/component/header__search__searchbtn";
 
 @import "object/component/header__search__searchicon";
+
+// ↓object/compo/aside↓
+@import "object/component/aside__nav__list__headline";
+
+@import "object/component/aside__nav__list__sublist__items";
+
+@import "object/component/aside__nav__button";
 
 // ↓object/compo/main↓
 @import "object/component/main__title__logo";
@@ -38,6 +52,46 @@
 
 @import "object/component/main__access__bright";
 
+@import "object/component/main__goods__cards__card__discription";
+
+@import "object/component/main__goods__cards__card__img";
+
+@import "object/component/main__goods__discription__headline";
+
+@import "object/component/main__goods__discription__paragraph";
+
+@import "object/component/main__pages__sp__button";
+
+@import "object/component/main__pages__tab__items";
+
+@import "object/component/main__title__sublogo";
+
+@import "object/component/main__gimmicks__button";
+
+@import "object/component/main__gimmicks__htmlquote__list";
+
+@import "object/component/main__gimmicks__lists__ordered";
+
+@import "object/component/main__gimmicks__lists__unordered";
+
+@import "object/component/main__gimmicks__string";
+
+@import "object/component/main__gimmicks__table__items";
+
+@import "object/component/main__manyimages__disc__btmimg";
+
+@import "object/component/main__manyimages__disc__midimg2";
+
+@import "object/component/main__manyimages__disc__midmg1";
+
+@import "object/component/main__manyimages__disc__topimg";
+
+@import "object/component/main__manyimages__imgfall__items";
+
+@import "object/component/main__text__headlines";
+
+@import "object/component/main__text__quote";
+
 // ↓object/compo/footer↓
 @import "object/component/footer__copyrights";
 
@@ -46,8 +100,19 @@
 // ↓object/proj/header↓
 @import "object/project/header__search";
 
+// ↓object/proj/aside↓
+@import "object/project/aside__nav__list";
+
+@import "object/project/aside__nav__list__sublist";
+
 // ↓object/proj/main↓
-@import "object/project/main__title";
+@import "object/project/main__title1";
+
+@import "object/project/main__title2";
+
+@import "object/project/main__title3";
+
+@import "object/project/main__title4";
 
 @import "object/project/main__eatstyle";
 
@@ -57,5 +122,32 @@
 
 @import "object/project/main__access";
 
+@import "object/project/main__goods";
 
+@import "object/project/main__goods__cards";
 
+@import "object/project/main__goods__cards__card";
+
+@import "object/project/main__goods__discription";
+
+@import "object/project/main__pages";
+
+@import "object/project/main__pages__sp";
+
+@import "object/project/main__pages__tab";
+
+@import "object/project/main__gimmicks";
+
+@import "object/project/main__gimmicks__htmlquote";
+
+@import "object/project/main__gimmicks__lists";
+
+@import "object/project/main__gimmicks__table";
+
+@import "object/project/main__manyimages";
+
+@import "object/project/main__manyimages__disc";
+
+@import "object/project/main__manyimages__imgfall";
+
+@import "object/project/main__text";

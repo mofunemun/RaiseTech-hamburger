@@ -1,0 +1,16 @@
+.main__gimmicks__htmlquote__list{
+    padding:3vh 15% 5vh 15%;
+    .main__gimmicks__htmlquote__list__items{
+        list-style: none;
+        color: #3C2A10;
+        font-size: 16px;
+        >ul{
+            padding-left: 5%;
+            >.main__gimmicks__htmlquote__list__subitems{
+                list-style: none;
+                color: inherit;
+                font-size: 16px;
+            }
+        }
+    }
+}
